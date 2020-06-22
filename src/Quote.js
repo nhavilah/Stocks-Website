@@ -34,9 +34,9 @@ export function Quote() {
         let url = ``;
         //switches fetch url when logged in
         if (token !== null) {
-            url = `http://131.181.190.87:3000/stocks/authed/${id}?from=${fromDate}T00%3A00%3A00.000Z&to=${toDate}T00%3A00%3A00.000Z`;
+            url = `https://172.22.25.101/stocks/authed/${id}?from=${fromDate}T00%3A00%3A00.000Z&to=${toDate}T00%3A00%3A00.000Z`;
         } else {
-            url = `http://131.181.190.87:3000/stocks/${id}`;
+            url = `https://172.22.25.101/stocks/${id}`;
         }
         fetch(url, { headers })
             .then(res => res.json())

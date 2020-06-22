@@ -4,7 +4,7 @@ export function Register() {
     const [password, setPassword] = useState(``);
     const [registrationResult, setRegistrationResult] = useState(null);
     function login(username, password) {
-        const url = `http://131.181.190.87:3000/user/register`;
+        const url = `https://172.22.25.101/user/register`;
         return fetch(url, {
             method: "POST",
             headers: { accept: "application/json", "Content-Type": "application/json" },
