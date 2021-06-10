@@ -72,7 +72,7 @@ function Login() {
   let token = sessionStorage.getItem("token");
   //sends the POST request
   function login(username, password) {
-    const url = `https://172.22.25.101/user/login`;
+    const url = `http://127.0.0.1:3000/user/login`;
     return fetch(url, {
       method: "POST",
       headers: { accept: "application/json", "Content-Type": "application/json" },
